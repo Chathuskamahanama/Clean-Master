@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Services</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="ourservice.html">Our services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myaccount.html" id="nav_account"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="logout"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="./js/validate.js"></script>
+
+    <div class="container">
+        <div class="display-4 text-center">Services</div>
+        <h5 class="text-center mt-5">Services Price Table</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr class="table-active">
+                    <th scope="col">#</th>
+                    <th scope="col">Service Name</th>
+                    <th scope="col">One Day, One Labour Price LKR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Residential Cleaning</td>
+                    <td>4800</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Office Cleaning</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Wall Painting</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Window Cleaning</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Construction Cleaning</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Green Cleaning Solutions</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Water Tank Cleaning</td>
+                    <td>2500</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Commercial Cleaning</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Air Duct Cleaning</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Seasonal Cleaning</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Wodden Floor Cleaning</td>
+                    <td>6000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-center mt-5">Labours Price(LKR) Table</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr class="table-active">
+                    <th scope="col">One Labour</th>
+                    <th scope="col">Two Labour</th>
+                    <th scope="col">Three Labour</th>
+                    <th scope="col">Four Labour</th>
+                    <th scope="col">Five Labour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>x1</td>
+                    <td>x2</td>
+                    <td>x2.5</td>
+                    <td>x3</td>
+                    <td>x4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container mt-5 mb-5 bg-success">
+        <h3 class="text-center mt-3 mb-5 text-white">Check Out Your Service with Labours</h3>
+        <form action="checkout.html" method="get">
+            <div class="row mb-5">
+                <select class="col form-control ml-3" aria-label="Default select example" name="serviceId">
+                    <option value="Residential Cleaning">Residential Cleaning</option>
+                    <option value="Office Cleaning">Office Cleaning</option>
+                    <option value="Wall Painting">Wall Painting</option>
+                    <option value="Window Cleaning">Window Cleaning</option>
+                    <option value="Construction Cleaning">Construction Cleaning</option>
+                    <option value="Green Cleaning Solutions">Green Cleaning Solutions</option>
+                    <option value="Water Tank Cleaning">Water Tank Cleaning</option>
+                    <option value="Commercial Cleaning">Commercial Cleaning</option>
+                    <option value="Air Duct Cleaning">Air Duct Cleaning</option>
+                    <option value="Seasonal Cleaning">Seasonal Cleaning</option>
+                    <option value="Wodden Floor Cleaning">Wodden Floor Cleaning</option>
+                </select>
+                <select class="col form-control ml-3" aria-label="Default select example" name="labourId">
+                    <option value="1">x1</option>
+                    <option value="2">x2</option>
+                    <option value="3">x3</option>
+                    <option value="4">x4</option>
+                    <option value="5">x5</option>
+                </select>
+                <button type="submit" class="btn btn-primary ml-2 mr-2">Calculate Totol Cost</button>
+
+            </div>
+        </form>
+    </div>
+
+    <footer class="mt-auto bg-dark">
+        <h3 class="text-center text-light pt-5 pb-3">FOLLOW US ON SOCIAL MEDIA</h3>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.facebook.com"><i class="fa fa-facebook mw-100 w-100 h-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-twitter w-100 h-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-instagram w-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-whatsapp w-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-phone w-100 p-3"></i></a>
+        </div>
+        <div class="div">
+            <p class="text-center text-light">© 2021 Cleaning Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

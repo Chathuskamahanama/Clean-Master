@@ -1,0 +1,100 @@
+.body {
+    background-color: #98FFFF;
+}
+
+.top-bar-links ul {
+    background-color: #8A0808;
+    list-style: none;
+    text-decoration: none;
+    padding: 2px;
+    margin: 0;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.ma3 {
+    background-color: #A9F5F2;
+    margin: auto;
+    padding: 20px;
+}
+
+.ma3 h1 {
+    color: red;
+}
+
+.ma3 h6 {
+    color: #1C1C1C;
+}
+
+.ma1 {
+    font-family: Annie Use Your Telescope;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.welcome {
+    background-color: LightGray;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.welcome {
+    font: normal 10px Arial, Helvetica, sans-serif;
+}
+
+.welcome-1 {
+    font: normal 10px Arial, Helvetica, sans-serif;
+}
+
+.services {
+    background-color: #A9F5F2;
+    margin: auto;
+    margin-top: auto;
+    padding-top: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.services-include {
+    font: normal 25px Arial, Helvetica, sans-serif;
+}
+
+.centerpart {
+    background-color: rgb(33, 117, 26);
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.footer-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

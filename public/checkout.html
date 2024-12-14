@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CheckOut</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourservice.html">Our services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myaccount.html" id="nav_account"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="logout"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="./js/validate.js"></script>
+
+    <div class="row justify-content-center m-5">
+        <div class="card mb-5" style="width: 30rem;">
+            <div class="card-body m-2">
+                <h4 class="card-title mb-5 text-center">Check Out with Your Details</h4>
+                <div class="row">
+                    <h6 class="col card-text">Service Name : &nbsp</h6>
+                    <p class="col" id="res-serviceName"></p>
+                </div>
+                <div class="row">
+                    <h6 class="col card-text">Labours : &nbsp</h6>
+                    <p class="col" id="res-labourConut"></p>
+                </div>
+                <div class="row">
+                    <h6 class="col card-text">Total Amount Payable : &nbsp</h6>
+                    <p class="col" id="total"></p>
+                </div>
+                <div class="row mt-2">
+                    <h6 class="col card-text">Your Name : &nbsp</h6>
+                    <input type="text" id="name" class="col form-control" required>
+                </div>
+                <div class="row mt-2">
+                    <h6 class="col card-text">Telephone : &nbsp</h6>
+                    <input type="text" id="telephone" class="col form-control" required>
+                </div>
+                <div class="row mt-2">
+                    <h6 class="col card-text">Full Address : &nbsp</h6>
+                    <textarea rows="3" id="address" class="col form-control" required></textarea>
+                </div>
+                <div class="row mt-3">
+                    <h6 class="col card-text text-center">Date</h6>
+                    <h6 class="col card-text text-center">Time</h6>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="col">
+                        <input type="time" id="time" class="form-control" required>
+                    </div>
+                </div>
+                <p class="text-success text-center mt-3" id="saved"></p>
+                <p class="text-danger text-center mt-3" id="cantsaved"></p>
+                <div class="text-right">
+                    <a class="nav-link text-danger" href="login.html" id="login_here"></a>
+                    <button type="button" id="submitBtn" class="btn btn-primary mt-1">Order Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt-auto bg-dark">
+        <h3 class="text-center text-light pt-5 pb-3">FOLLOW US ON SOCIAL MEDIA</h3>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.facebook.com"><i class="fa fa-facebook mw-100 w-100 h-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-twitter w-100 h-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-instagram w-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-whatsapp w-100 p-3"></i></a>
+            <a href=""> <i class="fa fa-phone w-100 p-3"></i></a>
+        </div>
+        <div class="div">
+            <p class="text-center text-light">© 2021 Cleaning Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+    <script type="text/javascript" src="./js/firebaseconnection.js"></script>
+    <script type="text/javascript" src="./js/checkout.js"></script>
+</body>
+
+</html>
